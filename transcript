@@ -1,0 +1,1461 @@
+# Reading C:/altera/12.1/modelsim_ase/tcl/vsim/pref.tcl 
+# OpenFile {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/FinalProjectCJK.mpf} 
+# Loading project FinalProjectCJK
+# Compile of CPU.v was successful with warnings.
+vsim -t 100ns work.CPU_tb
+# vsim -t 100ns work.CPU_tb 
+# Loading work.CPU_tb
+# Loading work.Memory
+# Loading work.CPU
+# Loading work.mux5b2_1
+# Loading work.mux32b2_1
+# Loading work.reg_file
+# Loading work.controlunit
+# Loading work.alu
+# Loading work.alu_control
+# Loading work.signextender
+# Loading work.leftshift2
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(41): [PCDPC] - Port size (26 or 26) does not match connection size (32) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeft
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(41): [PCDPC] - Port size (28 or 28) does not match connection size (32) for port 'out'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeft
+#  Trace back: invalid command name ""
+#     while executing
+# "$treeView configure -sortstate $dir $col"
+#     (procedure "sort" line 3)
+#     invoked from within
+# "sort .main_pane.structure 0 descending"
+#     (in namespace inscope "::QStructure" script line 1)
+#     invoked from within
+# "namespace inscope ::QStructure {sort .main_pane.structure} 0 descending"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval $itk_option(-sortcommand) $column $dir"
+#     (object "::.main_pane.structure.interior.cs.body.struct" method "::vsimwidgets::Hierarchy::sort" body line 26)
+#     invoked from within
+# "sort $sortIdx $dir"
+#     (object "::.main_pane.structure.interior.cs.body.struct" method "::vsimwidgets::Hierarchy::_initializeSortColumn" body line 10)
+#     invoked from within
+# "::.main_pane.structure.interior.cs.body.struct _initializeSortColumn"
+#     (in namespace inscope "::vsimwidgets::Hierarchy" script line 1)
+#     invoked from within
+# "namespace inscope ::vsimwidgets::Hierarchy {::.main_pane.structure.interior.cs.body.struct _initializeSortColumn}"
+#     ("after" script) 
+#    <2: ::tkerror {invalid command name ""} 
+#    <1: ::bgerror {invalid command name ""} 
+restart
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(41): [PCDPC] - Port size (26 or 26) does not match connection size (32) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeft
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(41): [PCDPC] - Port size (28 or 28) does not match connection size (32) for port 'out'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeft
+run
+# instruction         11
+# 1
+# Break in Module CPU at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v line 64
+add wave -position insertpoint sim:/CPU_tb/*
+step -over -current
+run -continue
+# ** Error: (vsim-3601) Iteration limit reached at time 0 ns.
+# 
+run
+# ** Error: (vsim-3601) Iteration limit reached at time 0 ns.
+# 
+add wave -position insertpoint sim:/CPU_tb/memory/*
+add wave -position insertpoint sim:/CPU_tb/cpu/*
+restart
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(41): [PCDPC] - Port size (26 or 26) does not match connection size (32) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeft
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(41): [PCDPC] - Port size (28 or 28) does not match connection size (32) for port 'out'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeft
+# Compile of CPU.v was successful with warnings.
+run -all
+# instruction         11
+# 1
+# Break in Module CPU at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v line 64
+run
+# ** Error: (vsim-3601) Iteration limit reached at time 0 ns.
+# 
+restart
+# Loading work.CPU
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(41): [PCDPC] - Port size (26 or 26) does not match connection size (32) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeft
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(41): [PCDPC] - Port size (28 or 28) does not match connection size (32) for port 'out'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeft
+run
+# instruction         11
+# Break in Module CPU at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v line 64
+run -continue
+# ** Error: (vsim-3601) Iteration limit reached at time 0 ns.
+# 
+vsim -t 100ns work.CPU_tb
+# vsim -t 100ns work.CPU_tb 
+# Loading work.CPU_tb
+# Loading work.Memory
+# Loading work.CPU
+# Loading work.mux5b2_1
+# Loading work.mux32b2_1
+# Loading work.reg_file
+# Loading work.controlunit
+# Loading work.alu
+# Loading work.alu_control
+# Loading work.signextender
+# Loading work.leftshift2
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(41): [PCDPC] - Port size (26 or 26) does not match connection size (32) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeft
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(41): [PCDPC] - Port size (28 or 28) does not match connection size (32) for port 'out'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeft
+add wave -r /*
+restart
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(41): [PCDPC] - Port size (26 or 26) does not match connection size (32) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeft
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(41): [PCDPC] - Port size (28 or 28) does not match connection size (32) for port 'out'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeft
+run
+# instruction         11
+# Break in Module CPU at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v line 64
+run -continue
+# Break in Module CPU at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v line 64
+run
+# Break in Module CPU at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v line 64
+run
+# ** Error: (vsim-3601) Iteration limit reached at time 0 ns.
+# 
+add wave -position insertpoint sim:/CPU_tb/*
+run -all
+# ** Error: (vsim-3601) Iteration limit reached at time 0 ns.
+# 
+run
+# ** Error: (vsim-3601) Iteration limit reached at time 0 ns.
+# 
+# Compile of CPU.v was successful with warnings.
+restart
+# Loading work.CPU
+run
+# instruction         11
+# Break in Module CPU at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v line 64
+run
+# Break in Module CPU at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v line 64
+# Compile of alu.v was successful.
+# Compile of aluCtrl.v was successful.
+# Compile of CPU.v was successful with warnings.
+# Compile of CPU_tb.v was successful.
+# Compile of ctrlUnit.v was successful.
+# Compile of leftshift2.v was successful.
+# Compile of leftshift2_32b.v was successful.
+# Compile of memory.v was successful.
+# Compile of mux2_1.v was successful.
+# Compile of mux2_1_tb.v was successful.
+# Compile of mux5b2_1.v was successful.
+# Compile of mux32b2_1.v was successful.
+# Compile of reg_32.v was successful.
+# Compile of reg_32_tb.v was successful.
+# Compile of reg_file.v was successful with warnings.
+# Compile of reg_file_tb.v was successful.
+# Compile of signextender.v was successful.
+# Compile of tb_alu.v was successful.
+# Compile of tb_aluCtrl.v was successful.
+# Compile of tb_ctrlUnit.v was successful.
+# 20 compiles, 0 failed with no errors. 
+vsim work.CPU_tb
+# vsim work.CPU_tb 
+# Loading work.CPU_tb
+# Loading work.Memory
+# Loading work.CPU
+# Loading work.mux5b2_1
+# Loading work.mux32b2_1
+run
+# instruction         11
+add wave -position insertpoint sim:/CPU_tb/*
+# WARNING: No extended dataflow license exists
+restart
+run
+# instruction         11
+restart
+# Compile of CPU.v was successful with warnings.
+run
+# instruction         11
+# Compile of alu.v was successful.
+# Compile of aluCtrl.v was successful.
+# Compile of CPU.v was successful with warnings.
+# Compile of CPU_tb.v was successful.
+# Compile of ctrlUnit.v was successful.
+# Compile of leftshift2.v was successful.
+# Compile of leftshift2_32b.v was successful.
+# Compile of memory.v was successful.
+restart
+# Loading work.CPU_tb
+# Loading work.Memory
+# Loading work.CPU
+# Loading work.reg_file
+# Loading work.controlunit
+# Loading work.alu
+# Loading work.alu_control
+# Loading work.signextender
+# ** Error: (vsim-3033) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(41): Instantiation of 'leftshift2_32b' failed. The design unit was not found.
+# 
+#         Region: /CPU_tb/cpu
+#         Searched libraries:
+#             C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/work
+# Compile of mux2_1.v was successful.
+# Compile of mux2_1_tb.v was successful.
+# Compile of mux5b2_1.v was successful.
+# Compile of mux32b2_1.v was successful.
+# Compile of reg_32.v was successful.
+# Compile of reg_32_tb.v was successful.
+# Compile of reg_file.v was successful with warnings.
+# Compile of reg_file_tb.v was successful.
+# Compile of signextender.v was successful.
+# Compile of tb_alu.v was successful.
+# Compile of tb_aluCtrl.v was successful.
+# Compile of tb_ctrlUnit.v was successful.
+# 20 compiles, 0 failed with no errors. 
+vsim work.CPU_tb
+# vsim work.CPU_tb 
+# Loading work.CPU_tb
+# Loading work.Memory
+# Loading work.CPU
+# Loading work.mux5b2_1
+# Loading work.mux32b2_1
+# Loading work.reg_file
+# Loading work.controlunit
+# Loading work.alu
+# Loading work.alu_control
+# Loading work.signextender
+# ** Error: (vsim-3033) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(41): Instantiation of 'leftshift2_32b' failed. The design unit was not found.
+# 
+#         Region: /CPU_tb/cpu
+#         Searched libraries:
+#             C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/work
+# Error loading design
+# A time value could not be extracted from the current line
+# Compile of leftshift2_32b.v was successful.
+vsim work.CPU_tb
+# vsim work.CPU_tb 
+# Loading work.CPU_tb
+# Loading work.Memory
+# Loading work.CPU
+# Loading work.mux5b2_1
+# Loading work.mux32b2_1
+# Loading work.reg_file
+# Loading work.controlunit
+# Loading work.alu
+# Loading work.alu_control
+# Loading work.signextender
+# Loading work.leftshift2_32b
+run
+restart
+run
+# instruction         11
+restart
+run
+# Break in Module CPU at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v line 59
+run -continue
+# instruction         11
+# Break in Module CPU at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v line 59
+step -over
+step -over
+run
+# Break in Module CPU at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v line 59
+step -over
+step -over
+restart
+run -continue
+# Break in Module CPU at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v line 59
+run -continue
+# Break in Module controlunit at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/ctrlUnit.v line 17
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+# Break key hit 
+# Break key hit 
+restart
+# Compile of ctrlUnit.v was successful.
+vsim work.CPU_tb
+# vsim work.CPU_tb 
+# Loading work.CPU_tb
+# Loading work.Memory
+# Loading work.CPU
+# Loading work.mux5b2_1
+# Loading work.mux32b2_1
+# Loading work.reg_file
+# Loading work.controlunit
+# Loading work.alu
+# Loading work.alu_control
+# Loading work.signextender
+# Loading work.leftshift2_32b
+add wave -position insertpoint sim:/CPU_tb/*
+restart
+run
+# instruction         11
+# Break in Module CPU at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v line 64
+add wave -r /*
+# Compile of signextender.v failed with 1 errors.
+# Compile of signextender.v failed with 1 errors.
+# Compile of signextender.v failed with 1 errors.
+# Compile of alu.v was successful.
+# Compile of aluCtrl.v was successful.
+# Compile of CPU.v was successful with warnings.
+# Compile of CPU_tb.v was successful.
+# Compile of ctrlUnit.v was successful.
+# Compile of leftshift2.v was successful.
+# Compile of leftshift2_32b.v was successful.
+# Compile of memory.v was successful.
+# Compile of mux2_1.v was successful.
+# Compile of mux2_1_tb.v was successful.
+# Compile of mux5b2_1.v was successful.
+# Compile of mux32b2_1.v was successful.
+# Compile of reg_32.v was successful.
+# Compile of reg_32_tb.v was successful.
+# Compile of reg_file.v was successful with warnings.
+# Compile of reg_file_tb.v was successful.
+# Compile of signextender.v failed with 1 errors.
+# Compile of tb_alu.v was successful.
+# Compile of tb_aluCtrl.v was successful.
+# Compile of tb_ctrlUnit.v was successful.
+# 20 compiles, 1 failed with 1 error. 
+# Compile of signextender.v was successful.
+restart
+# Loading work.CPU_tb
+# Loading work.Memory
+# Loading work.CPU
+# Loading work.mux5b2_1
+# Loading work.mux32b2_1
+# Loading work.reg_file
+# Loading work.controlunit
+# Loading work.alu
+# Loading work.alu_control
+# Loading work.signextender
+# Loading work.leftshift2_32b
+run
+# instruction         11
+# Break in Module CPU at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v line 64
+# WARNING: No extended dataflow license exists
+# Compile of memory.v failed with 1 errors.
+# Compile of memory.v was successful.
+# Compile of CPU.v was successful with warnings.
+# Compile of memory.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart
+# Loading work.Memory
+# Loading work.CPU
+run
+# instruction         11
+# Break in Module CPU at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v line 64
+run
+run
+# Compile of alu.v was successful.
+run
+restart
+# Loading work.alu
+run
+# instruction         11
+# Break in Module CPU at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v line 64
+run
+restart
+run
+# instruction         11
+# Break in Module CPU at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v line 64
+run -continue
+restart
+run -continue
+# Break in NamedBeginStat file_block at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/memory.v line 54
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+restart
+# Compile of CPU.v failed with 1 errors.
+run
+# Break in NamedBeginStat file_block at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/memory.v line 54
+# Compile of alu.v was successful.
+# Compile of CPU.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error. 
+# Compile of alu.v was successful.
+# Compile of CPU.v was successful with warnings.
+# 2 compiles, 0 failed with no errors. 
+restart
+# Loading work.CPU
+# Loading work.alu
+# ** Error: (vsim-3053) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(36): Illegal output or inout port connection for "port 'aluresult'".
+# 
+#         Region: /CPU_tb/cpu/alu
+vsim work.CPU_tb
+# vsim work.CPU_tb 
+# Loading work.CPU_tb
+# Loading work.Memory
+# Loading work.CPU
+# Loading work.mux5b2_1
+# Loading work.mux32b2_1
+# Loading work.reg_file
+# Loading work.controlunit
+# Loading work.alu
+# Loading work.alu_control
+# Loading work.signextender
+# Loading work.leftshift2_32b
+# ** Error: (vsim-3053) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(36): Illegal output or inout port connection for "port 'aluresult'".
+# 
+#         Region: /CPU_tb/cpu/alu
+# Error loading design
+# A time value could not be extracted from the current line
+# Compile of CPU.v failed with 1 errors.
+# Compile of CPU.v was successful with warnings.
+vsim work.CPU_tb
+# vsim work.CPU_tb 
+# Loading work.CPU_tb
+# Loading work.Memory
+# Loading work.CPU
+# Loading work.mux5b2_1
+# Loading work.mux32b2_1
+# Loading work.reg_file
+# Loading work.controlunit
+# Loading work.alu
+# Loading work.alu_control
+# Loading work.signextender
+# Loading work.leftshift2_32b
+restart
+run
+# instruction         11
+# Break in Module CPU at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v line 66
+# Compile of alu.v was successful.
+restart
+# Loading work.alu
+run
+# instruction         11
+# Break in Module CPU at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v line 66
+restart
+run
+# instruction         11
+# Break in Module CPU at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v line 66
+# Compile of alu.v was successful.
+restart
+# Loading work.alu
+run -continue
+# instruction         11
+# Break in Module CPU at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v line 66
+# Compile of alu.v failed with 1 errors.
+restart
+# Compile of alu.v was successful.
+restart
+# Loading work.alu
+run
+# instruction         11
+# Break in Module CPU at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v line 66
+# Compile of alu.v was successful.
+quit -sim
+vsim work.alu_control
+# vsim work.alu_control 
+# Loading work.alu_control
+# Compile of alu.v was successful.
+# Compile of aluCtrl.v was successful.
+# Compile of CPU.v was successful with warnings.
+# Compile of CPU_tb.v was successful.
+# Compile of ctrlUnit.v was successful.
+# Compile of leftshift2.v was successful.
+# Compile of leftshift2_32b.v was successful.
+# Compile of memory.v was successful.
+# Compile of mux2_1.v was successful.
+# Compile of mux2_1_tb.v was successful.
+# Compile of mux5b2_1.v was successful.
+# Compile of mux32b2_1.v was successful.
+# Compile of reg_32.v was successful.
+# Compile of reg_32_tb.v was successful.
+# Compile of reg_file.v was successful with warnings.
+# Compile of reg_file_tb.v was successful.
+# Compile of signextender.v was successful.
+# Compile of tb_alu.v was successful.
+# Compile of tb_aluCtrl.v was successful.
+# Compile of tb_ctrlUnit.v was successful.
+# 20 compiles, 0 failed with no errors. 
+# Compile of alu.v failed with 2 errors.
+# Compile of alu.v was successful.
+vsim work.CPU_tb
+# vsim work.CPU_tb 
+# Loading work.CPU_tb
+# Loading work.Memory
+# Loading work.CPU
+# Loading work.mux5b2_1
+# Loading work.mux32b2_1
+# Loading work.reg_file
+# Loading work.controlunit
+# Loading work.alu
+# Loading work.alu_control
+# Loading work.signextender
+# Loading work.leftshift2_32b
+add wave -position insertpoint sim:/CPU_tb/*
+restart
+run
+# instruction         11
+# Break in Module CPU at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v line 66
+add wave -position insertpoint sim:/CPU_tb/cpu/mux_ALU/*
+add wave -position insertpoint sim:/CPU_tb/memory/*
+add wave -r /*
+restart
+run
+# instruction         11
+# Break in Module CPU at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v line 66
+# Compile of CPU.v was successful with warnings.
+restart
+# Loading work.CPU
+run
+# instruction         11
+# Break in Module CPU at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v line 66
+restart
+# Loading work.CPU
+# Compile of CPU.v was successful with warnings.
+run
+# instruction         11
+# Break in Module CPU at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v line 66
+restart
+run
+# instruction         11
+# Break in Module CPU at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v line 66
+run
+restart
+run
+# Break in Module signextender at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/signextender.v line 11
+step -over
+step -over -current
+# instruction         11
+step -over
+step -over
+# Compile of signextender.v failed with 1 errors.
+# Break key hit 
+# Compile of signextender.v was successful.
+run -continue
+# Break in Module signextender at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/signextender.v line 11
+step -over
+run -continue
+# Break in Module signextender at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/signextender.v line 11
+run -continue
+# Break in Module CPU at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v line 66
+# Compile of alu.v was successful.
+quit -sim
+# Compile of aluCtrl.v was successful.
+# Compile of CPU.v was successful with warnings.
+# Compile of CPU_tb.v was successful.
+# Compile of ctrlUnit.v was successful.
+# Compile of leftshift2.v was successful.
+# Compile of leftshift2_32b.v was successful.
+# Compile of memory.v was successful.
+# Compile of mux2_1.v was successful.
+# Compile of mux2_1_tb.v was successful.
+# Compile of mux5b2_1.v was successful.
+# Compile of mux32b2_1.v was successful.
+# Compile of reg_32.v was successful.
+# Compile of reg_32_tb.v was successful.
+# Compile of reg_file.v was successful with warnings.
+# Compile of reg_file_tb.v was successful.
+# Compile of signextender.v was successful.
+# Compile of tb_alu.v was successful.
+# Compile of tb_aluCtrl.v was successful.
+# Compile of tb_ctrlUnit.v was successful.
+# 20 compiles, 0 failed with no errors. 
+# Compile of CPU.v failed with 1 errors.
+# Compile of CPU.v was successful with warnings.
+# Compile of reg_file.v was successful with warnings.
+# Compile of reg_file.v was successful with warnings.
+vsim work.CPU_tb
+# vsim work.CPU_tb 
+# Loading work.CPU_tb
+# Loading work.Memory
+# Loading work.CPU
+# Loading work.mux5b2_1
+# Loading work.mux32b2_1
+# Loading work.reg_file
+# Loading work.controlunit
+# Loading work.alu
+# Loading work.alu_control
+# Loading work.signextender
+# Loading work.leftshift2_32b
+add wave -r /*
+run
+# instruction  537395200
+restart
+restart
+run
+# instruction  537395200
+quit -sim
+vsim work.Memory
+# vsim work.Memory 
+# Loading work.Memory
+vsim work.Memory
+# vsim work.Memory 
+# Loading work.Memory
+quit -sim
+# Load canceled
+vsim work.CPU_tb
+# vsim work.CPU_tb 
+# Loading work.CPU_tb
+# Loading work.Memory
+# Loading work.CPU
+# Loading work.mux5b2_1
+# Loading work.mux32b2_1
+# Loading work.reg_file
+# Loading work.controlunit
+# Loading work.alu
+# Loading work.alu_control
+# Loading work.signextender
+# Loading work.leftshift2_32b
+run
+# Break in NamedBeginStat file_block at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/memory.v line 54
+step -over
+step -over
+step -over
+run
+# Break in NamedBeginStat file_block at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/memory.v line 54
+run -all
+# Break in Module mux32b2_1 at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/mux32b2_1.v line 10
+run -continue
+# Break in Module mux32b2_1 at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/mux32b2_1.v line 10
+run -continue
+# Break in Module mux32b2_1 at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/mux32b2_1.v line 10
+run -continue
+# Break in Module mux32b2_1 at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/mux32b2_1.v line 10
+run
+# Break in Module mux32b2_1 at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/mux32b2_1.v line 13
+# Compile of mux5b2_1.v was successful.
+# Compile of mux32b2_1.v was successful.
+# 2 compiles, 0 failed with no errors. 
+run
+# instruction  537395200
+run
+add wave -r /*
+restart
+# Loading work.mux5b2_1
+# Loading work.mux32b2_1
+run
+# instruction  537395200
+# Compile of mux5b2_1.v was successful.
+# Compile of mux32b2_1.v was successful.
+# Compile of CPU.v failed with 1 errors.
+# Compile of CPU.v failed with 1 errors.
+# Compile of CPU.v failed with 1 errors.
+# Compile of CPU.v failed with 1 errors.
+# Compile of CPU.v failed with 1 errors.
+# Compile of CPU.v failed with 1 errors.
+# Compile of CPU.v failed with 1 errors.
+# Compile of CPU.v was successful with warnings.
+# Compile of alu.v was successful.
+# Compile of aluCtrl.v was successful.
+# Compile of CPU.v was successful with warnings.
+# Compile of CPU_tb.v was successful.
+# Compile of ctrlUnit.v was successful.
+# Compile of leftshift2.v was successful.
+# Compile of leftshift2_32b.v was successful.
+# Compile of memory.v was successful.
+# Compile of mux2_1.v was successful.
+# Compile of mux2_1_tb.v was successful.
+# Compile of mux5b2_1.v was successful.
+# Compile of mux32b2_1.v was successful.
+# Compile of reg_32.v was successful.
+# Compile of reg_32_tb.v was successful.
+# Compile of reg_file.v was successful with warnings.
+# Compile of reg_file_tb.v was successful.
+# Compile of signextender.v was successful.
+# Compile of tb_alu.v was successful.
+# Compile of tb_aluCtrl.v was successful.
+# Compile of tb_ctrlUnit.v was successful.
+# 20 compiles, 0 failed with no errors. 
+restart
+# Loading work.CPU_tb
+# Loading work.Memory
+# Loading work.CPU
+# Loading work.mux5b2_1
+# Loading work.mux32b2_1
+# Loading work.reg_file
+# Loading work.controlunit
+# Loading work.alu
+# Loading work.alu_control
+# Loading work.signextender
+# Loading work.leftshift2_32b
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(42): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+# ** Error: (vsim-3053) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(42): Illegal output or inout port connection for "port 'out'".
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+# Compile of CPU.v failed with 1 errors.
+# Compile of CPU.v was successful with warnings.
+restart -f
+# No Design Loaded!
+vsim work.CPU_tb
+# vsim work.CPU_tb 
+# Loading work.CPU_tb
+# Loading work.Memory
+# Loading work.CPU
+# Loading work.mux5b2_1
+# Loading work.mux32b2_1
+# Loading work.reg_file
+# Loading work.controlunit
+# Loading work.alu
+# Loading work.alu_control
+# Loading work.signextender
+# Loading work.leftshift2_32b
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(42): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+# Warning in wave window restart: (vish-4014) No objects found matching '/CPU_tb/cpu/shiftLeft/in'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/CPU_tb/cpu/shiftLeft/out'. 
+# Compile of alu.v was successful.
+# Compile of aluCtrl.v was successful.
+# Compile of CPU.v was successful with warnings.
+# Compile of CPU_tb.v was successful.
+# Compile of ctrlUnit.v was successful.
+# Compile of leftshift2.v was successful.
+# Compile of leftshift2_32b.v was successful.
+# Compile of memory.v was successful.
+# Compile of mux2_1.v was successful.
+# Compile of mux2_1_tb.v was successful.
+# Compile of mux5b2_1.v was successful.
+# Compile of mux32b2_1.v was successful.
+# Compile of reg_32.v was successful.
+# Compile of reg_32_tb.v was successful.
+# Compile of reg_file.v was successful with warnings.
+# Compile of reg_file_tb.v was successful.
+# Compile of signextender.v was successful.
+# Compile of tb_alu.v was successful.
+# Compile of tb_aluCtrl.v was successful.
+# Compile of tb_ctrlUnit.v was successful.
+# 20 compiles, 0 failed with no errors. 
+restart
+# Loading work.CPU_tb
+# Loading work.Memory
+# Loading work.CPU
+# Loading work.mux5b2_1
+# Loading work.mux32b2_1
+# Loading work.reg_file
+# Loading work.controlunit
+# Loading work.alu
+# Loading work.alu_control
+# Loading work.signextender
+# Loading work.leftshift2_32b
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(42): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+run
+# instruction  537395200
+restart
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(42): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+run
+# instruction  537395200
+# Compile of CPU.v was successful with warnings.
+restart
+# Loading work.CPU
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(42): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+run
+# instruction  537395200
+# WARNING: No extended dataflow license exists
+run
+# Break in Module Memory at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/memory.v line 66
+# Compile of CPU.v failed with 1 errors.
+# Compile of CPU.v failed with 1 errors.
+# Compile of CPU.v failed with 1 errors.
+# Compile of CPU.v was successful with warnings.
+restart
+# Loading work.CPU
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(13): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'instructionAddress'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(5).
+# 
+#         Region: /CPU_tb/cpu
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(13): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'dataAddress'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(5).
+# 
+#         Region: /CPU_tb/cpu
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(43): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+run
+# Break in Module Memory at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/memory.v line 66
+run -continue
+# Break in Module Memory at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/memory.v line 66
+run -continue
+# instruction          x
+# Compile of CPU.v was successful with warnings.
+restart
+# Loading work.CPU
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(43): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+run
+# instruction  537395200
+run
+# Compile of alu.v was successful.
+# Compile of aluCtrl.v was successful.
+# Compile of CPU.v was successful with warnings.
+# Compile of CPU_tb.v failed with 2 errors.
+# Compile of ctrlUnit.v was successful.
+# Compile of leftshift2.v was successful.
+# Compile of leftshift2_32b.v was successful.
+# Compile of memory.v was successful.
+# Compile of mux2_1.v was successful.
+# Compile of mux2_1_tb.v was successful.
+# Compile of mux5b2_1.v was successful.
+# Compile of mux32b2_1.v was successful.
+# Compile of reg_32.v was successful.
+# Compile of reg_32_tb.v was successful.
+# Compile of reg_file.v was successful with warnings.
+# Compile of reg_file_tb.v was successful.
+# Compile of signextender.v was successful.
+# Compile of tb_alu.v was successful.
+# Compile of tb_aluCtrl.v was successful.
+# Compile of tb_ctrlUnit.v was successful.
+# 20 compiles, 1 failed with 2 errors. 
+# Compile of CPU_tb.v was successful.
+restart
+# Loading work.CPU_tb
+# Loading work.Memory
+# Loading work.CPU
+# Loading work.mux5b2_1
+# Loading work.mux32b2_1
+# Loading work.reg_file
+# Loading work.controlunit
+# Loading work.alu
+# Loading work.alu_control
+# Loading work.signextender
+# Loading work.leftshift2_32b
+# ** Error: (vsim-3053) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(12): Illegal output or inout port connection for "port 'instr'".
+# 
+#         Region: /CPU_tb/memory
+# ** Error: (vsim-3053) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(12): Illegal output or inout port connection for "port 'data_out'".
+# 
+#         Region: /CPU_tb/memory
+# ** Error: (vsim-3053) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(13): Illegal output or inout port connection for "port 'PC'".
+# 
+#         Region: /CPU_tb/cpu
+# ** Error: (vsim-3053) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(13): Illegal output or inout port connection for "port 'dataAddress'".
+# 
+#         Region: /CPU_tb/cpu
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(43): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+# Load canceled
+vsim work.CPU_tb
+# vsim work.CPU_tb 
+# Loading work.CPU_tb
+# Loading work.Memory
+# Loading work.CPU
+# Loading work.mux5b2_1
+# Loading work.mux32b2_1
+# Loading work.reg_file
+# Loading work.controlunit
+# Loading work.alu
+# Loading work.alu_control
+# Loading work.signextender
+# Loading work.leftshift2_32b
+# ** Error: (vsim-3053) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(12): Illegal output or inout port connection for "port 'instr'".
+# 
+#         Region: /CPU_tb/memory
+# ** Error: (vsim-3053) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(12): Illegal output or inout port connection for "port 'data_out'".
+# 
+#         Region: /CPU_tb/memory
+# ** Error: (vsim-3053) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(13): Illegal output or inout port connection for "port 'PC'".
+# 
+#         Region: /CPU_tb/cpu
+# ** Error: (vsim-3053) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(13): Illegal output or inout port connection for "port 'dataAddress'".
+# 
+#         Region: /CPU_tb/cpu
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(43): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+# Error loading design
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+# Compile of CPU_tb.v failed with 1 errors.
+# Compile of CPU_tb.v was successful.
+vsim work.CPU_tb
+# vsim work.CPU_tb 
+# Loading work.CPU_tb
+# Loading work.Memory
+# Loading work.CPU
+# Loading work.mux5b2_1
+# Loading work.mux32b2_1
+# Loading work.reg_file
+# Loading work.controlunit
+# Loading work.alu
+# Loading work.alu_control
+# Loading work.signextender
+# Loading work.leftshift2_32b
+# ** Error: (vsim-3053) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(14): Illegal output or inout port connection for "port 'PC'".
+# 
+#         Region: /CPU_tb/cpu
+# ** Error: (vsim-3053) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(14): Illegal output or inout port connection for "port 'dataAddress'".
+# 
+#         Region: /CPU_tb/cpu
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(43): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+# Error loading design
+# Compile of CPU.v failed with 2 errors.
+# A time value could not be extracted from the current line
+# Compile of alu.v was successful.
+# Compile of aluCtrl.v was successful.
+# Compile of CPU.v failed with 1 errors.
+# Compile of CPU_tb.v was successful.
+# Compile of ctrlUnit.v was successful.
+# Compile of leftshift2.v was successful.
+# Compile of leftshift2_32b.v was successful.
+# Compile of memory.v was successful.
+# Compile of mux2_1.v was successful.
+# Compile of mux2_1_tb.v was successful.
+# Compile of mux5b2_1.v was successful.
+# Compile of mux32b2_1.v was successful.
+# Compile of reg_32.v was successful.
+# Compile of reg_32_tb.v was successful.
+# Compile of reg_file.v was successful with warnings.
+# Compile of reg_file_tb.v was successful.
+# Compile of signextender.v was successful.
+# Compile of tb_alu.v was successful.
+# Compile of tb_aluCtrl.v was successful.
+# Compile of tb_ctrlUnit.v was successful.
+# 20 compiles, 1 failed with 1 error. 
+# Compile of CPU_tb.v was successful.
+# Compile of CPU.v was successful with warnings.
+# Load canceled
+vsim work.CPU_tb
+# vsim work.CPU_tb 
+# Loading work.CPU_tb
+# Loading work.Memory
+# Loading work.CPU
+# Loading work.mux5b2_1
+# Loading work.mux32b2_1
+# Loading work.reg_file
+# Loading work.controlunit
+# Loading work.alu
+# Loading work.alu_control
+# Loading work.signextender
+# Loading work.leftshift2_32b
+# ** Error: (vsim-3053) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(14): Illegal output or inout port connection for "port 'PC'".
+# 
+#         Region: /CPU_tb/cpu
+# ** Error: (vsim-3053) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(14): Illegal output or inout port connection for "port 'dataAddress'".
+# 
+#         Region: /CPU_tb/cpu
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(43): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+# Error loading design
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+# Compile of CPU_tb.v failed with 2 errors.
+vsim work.CPU_tb
+# vsim work.CPU_tb 
+# Loading work.CPU_tb
+# Loading work.Memory
+# Loading work.CPU
+# Loading work.mux5b2_1
+# Loading work.mux32b2_1
+# Loading work.reg_file
+# Loading work.controlunit
+# Loading work.alu
+# Loading work.alu_control
+# Loading work.signextender
+# Loading work.leftshift2_32b
+# ** Error: (vsim-3053) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(14): Illegal output or inout port connection for "port 'PC'".
+# 
+#         Region: /CPU_tb/cpu
+# ** Error: (vsim-3053) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(14): Illegal output or inout port connection for "port 'dataAddress'".
+# 
+#         Region: /CPU_tb/cpu
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(43): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+# Error loading design
+# Compile of CPU.v failed with 1 errors.
+# Compile of CPU.v failed with 1 errors.
+# Compile of CPU.v failed with 1 errors.
+# Compile of CPU.v was successful with warnings.
+# Compile of CPU_tb.v was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim work.CPU_tb
+# vsim work.CPU_tb 
+# Loading work.CPU_tb
+# Loading work.Memory
+# Loading work.CPU
+# Loading work.mux5b2_1
+# Loading work.mux32b2_1
+# Loading work.reg_file
+# Loading work.controlunit
+# Loading work.alu
+# Loading work.alu_control
+# Loading work.signextender
+# Loading work.leftshift2_32b
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(41): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+# Warning in wave window restart: (vish-4014) No objects found matching '/CPU_tb/cpu/instructionAddress'. 
+# Compile of alu.v was successful.
+# Compile of aluCtrl.v was successful.
+# Compile of CPU.v was successful with warnings.
+restart
+# Loading work.CPU_tb
+# Loading work.CPU
+# Loading work.alu
+# Loading work.alu_control
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(41): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+# Compile of CPU_tb.v was successful.
+run
+# instruction  537395200
+# Compile of ctrlUnit.v was successful.
+# Compile of leftshift2.v was successful.
+# Compile of leftshift2_32b.v was successful.
+# Compile of memory.v was successful.
+# Compile of mux2_1.v was successful.
+# Compile of mux2_1_tb.v was successful.
+# Compile of mux5b2_1.v was successful.
+# Compile of mux32b2_1.v was successful.
+# Compile of reg_32.v was successful.
+# Compile of reg_32_tb.v was successful.
+# Compile of reg_file.v was successful with warnings.
+# Compile of reg_file_tb.v was successful.
+# Compile of signextender.v was successful.
+# Compile of tb_alu.v was successful.
+# Compile of tb_aluCtrl.v was successful.
+# Compile of tb_ctrlUnit.v was successful.
+# 20 compiles, 0 failed with no errors. 
+restart
+# Loading work.Memory
+# Loading work.mux5b2_1
+# Loading work.mux32b2_1
+# Loading work.reg_file
+# Loading work.controlunit
+# Loading work.signextender
+# Loading work.leftshift2_32b
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(41): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+run -all
+# instruction  537395200
+# Compile of alu.v was successful.
+restart
+# Loading work.alu
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(41): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+run
+# instruction  537395200
+restart
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(41): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+# Compile of alu.v was successful.
+# Compile of aluCtrl.v was successful.
+# Compile of CPU.v was successful with warnings.
+# Compile of CPU_tb.v was successful.
+# Compile of ctrlUnit.v was successful.
+# Compile of leftshift2.v was successful.
+# Compile of leftshift2_32b.v was successful.
+# Compile of memory.v was successful.
+# Compile of mux2_1.v was successful.
+# Compile of mux2_1_tb.v was successful.
+# Compile of mux5b2_1.v was successful.
+# Compile of mux32b2_1.v was successful.
+# Compile of reg_32.v was successful.
+# Compile of reg_32_tb.v was successful.
+# Compile of reg_file.v was successful with warnings.
+# Compile of reg_file_tb.v was successful.
+# Compile of signextender.v was successful.
+# Compile of tb_alu.v was successful.
+# Compile of tb_aluCtrl.v was successful.
+# Compile of tb_ctrlUnit.v was successful.
+# 20 compiles, 0 failed with no errors. 
+run
+# instruction  537395200
+restart
+# Loading work.CPU_tb
+# Loading work.Memory
+# Loading work.CPU
+# Loading work.mux5b2_1
+# Loading work.mux32b2_1
+# Loading work.reg_file
+# Loading work.controlunit
+# Loading work.alu
+# Loading work.alu_control
+# Loading work.signextender
+# Loading work.leftshift2_32b
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(42): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+restart
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(42): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+run -continue
+# Break in Module alu at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/alu.v line 18
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+restart
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(42): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+# Compile of alu.v was successful.
+vsim work.CPU_tb
+# vsim work.CPU_tb 
+# Loading work.CPU_tb
+# Loading work.Memory
+# Loading work.CPU
+# Loading work.mux5b2_1
+# Loading work.mux32b2_1
+# Loading work.reg_file
+# Loading work.controlunit
+# Loading work.alu
+# Loading work.alu_control
+# Loading work.signextender
+# Loading work.leftshift2_32b
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(42): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+add wave -position insertpoint sim:/CPU_tb/*
+add wave -r /*
+# WARNING: No extended dataflow license exists
+restart
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(42): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+run -continue
+# Break in Module alu at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/alu.v line 15
+run -continue
+# Break in Module alu at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/alu.v line 26
+run -continue
+restart
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(42): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+run
+# Break in Module reg_file at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/reg_file.v line 24
+run -continue
+# Break in Module alu at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/alu.v line 26
+run
+# instruction  537395200
+# Break in Module alu at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/alu.v line 26
+run
+# Break in Module reg_file at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/reg_file.v line 24
+step -over
+step -over
+step -over
+# Next activity is in 10 ns.
+step -over
+restart -f
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(42): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+# Compile of CPU_tb.v was successful.
+restart
+# Loading work.CPU_tb
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(42): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+run
+# instruction          x
+# Compile of CPU_tb.v was successful.
+restart
+# Loading work.CPU_tb
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(42): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+run
+# Break in Module alu at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/alu.v line 26
+run
+# instruction  537395200
+# Break in Module alu at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/alu.v line 26
+run
+# Break in Module reg_file at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/reg_file.v line 25
+run
+# Break in Module alu at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/alu.v line 26
+run
+# Break in Module reg_file at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/reg_file.v line 25
+run
+# Break in Module reg_file at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/reg_file.v line 25
+run
+# Break in Module reg_file at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/reg_file.v line 25
+run
+# Break in Module reg_file at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/reg_file.v line 25
+run
+# Break in Module reg_file at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/reg_file.v line 25
+run -continue
+# Break in Module alu at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/alu.v line 26
+run -continue
+# Compile of CPU.v was successful with warnings.
+restart
+# Loading work.CPU
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(42): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+run
+# instruction          x
+run
+restart
+# Compile of reg_file.v was successful with warnings.
+restart
+# Loading work.reg_file
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(42): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+run
+# instruction          x
+# Compile of alu.v was successful.
+# Compile of aluCtrl.v was successful.
+# Compile of CPU.v was successful with warnings.
+quit -sim
+# Compile of CPU_tb.v was successful.
+vsim work.CPU_tb
+# vsim work.CPU_tb 
+# Loading work.CPU_tb
+# Loading work.Memory
+# Loading work.CPU
+# Loading work.mux5b2_1
+# Loading work.mux32b2_1
+# Loading work.reg_file
+# Loading work.controlunit
+# Loading work.alu
+# Loading work.alu_control
+# Loading work.signextender
+# Loading work.leftshift2_32b
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(42): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+# Compile of ctrlUnit.v was successful.
+# Compile of leftshift2.v was successful.
+# Compile of leftshift2_32b.v was successful.
+# Compile of memory.v was successful.
+# Compile of mux2_1.v was successful.
+# Compile of mux2_1_tb.v was successful.
+# Compile of mux5b2_1.v was successful.
+# Compile of mux32b2_1.v was successful.
+# Compile of reg_32.v was successful.
+# Compile of reg_32_tb.v was successful.
+# Compile of reg_file.v was successful with warnings.
+# Compile of reg_file_tb.v was successful.
+run
+# instruction  537395200
+# Compile of signextender.v was successful.
+# Compile of tb_alu.v was successful.
+# Compile of tb_aluCtrl.v was successful.
+# Compile of tb_ctrlUnit.v was successful.
+# 20 compiles, 0 failed with no errors. 
+add wave -r /*
+restart
+# Loading work.Memory
+# Loading work.mux5b2_1
+# Loading work.mux32b2_1
+# Loading work.reg_file
+# Loading work.signextender
+# Loading work.leftshift2_32b
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(42): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(5).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+run
+# instruction  537395200
+# Compile of leftshift2_32b.v was successful.
+restart
+# Loading work.leftshift2_32b
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(42): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(4).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+run
+# instruction  537395200
+# Error opening C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/[PCDPC] - Port size (32 or 32) does not match connection size 
+# Path name 'C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/[PCDPC] - Port size (32 or 32) does not match connection size ' doesn't exist.
+# A time value could not be extracted from the current line
+# Compile of reg_file.v failed with 2 errors.
+# Compile of reg_file.v failed with 2 errors.
+# Compile of reg_file.v failed with 1 errors.
+# Compile of reg_file.v failed with 1 errors.
+# Compile of reg_file.v failed with 2 errors.
+# Compile of reg_file.v failed with 2 errors.
+# Compile of reg_file.v failed with 2 errors.
+# A bookmark named "bookmark1" has been added for window "Source4"
+# Compile of reg_file.v failed with 1 errors.
+# Compile of reg_file.v failed with 2 errors.
+# Compile of reg_file.v failed with 1 errors.
+# Compile of reg_file.v was successful with warnings.
+# Compile of alu.v was successful.
+# Compile of aluCtrl.v was successful.
+# Compile of CPU.v failed with 1 errors.
+# Compile of CPU_tb.v failed with 1 errors.
+# Compile of ctrlUnit.v was successful.
+# Compile of leftshift2.v was successful.
+# Compile of leftshift2_32b.v was successful.
+# Compile of memory.v was successful.
+# Compile of mux2_1.v was successful.
+# Compile of mux2_1_tb.v was successful.
+# Compile of mux5b2_1.v was successful.
+# Compile of mux32b2_1.v was successful.
+# Compile of reg_32.v was successful.
+# Compile of reg_32_tb.v was successful.
+# Compile of reg_file.v was successful with warnings.
+# Compile of reg_file_tb.v was successful.
+# Compile of signextender.v was successful.
+# Compile of tb_alu.v was successful.
+# Compile of tb_aluCtrl.v was successful.
+# Compile of tb_ctrlUnit.v was successful.
+# 20 compiles, 2 failed with 2 errors. 
+# Compile of CPU.v was successful with warnings.
+# Compile of CPU_tb.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart
+# Loading work.CPU_tb
+# Loading work.Memory
+# Loading work.CPU
+# Loading work.mux5b2_1
+# Loading work.mux32b2_1
+# Loading work.reg_file
+# Loading work.controlunit
+# Loading work.alu
+# Loading work.alu_control
+# Loading work.signextender
+# Loading work.leftshift2_32b
+# ** Warning: (vsim-3017) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(13): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /CPU_tb/cpu
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(13): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'reset'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(5).
+# 
+#         Region: /CPU_tb/cpu
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(13): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'dataIn'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(5).
+# 
+#         Region: /CPU_tb/cpu
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(13): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'MemWrite'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(5).
+# 
+#         Region: /CPU_tb/cpu
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(13): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'dataOut'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(5).
+# 
+#         Region: /CPU_tb/cpu
+# ** Warning: (vsim-3722) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(13): [TFMPC] - Missing connection for port 'clk'.
+# 
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(42): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(4).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+run
+# instruction          x
+run
+# Compile of CPU.v was successful with warnings.
+# Compile of CPU_tb.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart
+# Loading work.CPU_tb
+# Loading work.CPU
+# ** Warning: (vsim-3017) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(13): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /CPU_tb/cpu
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(13): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'reset'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(5).
+# 
+#         Region: /CPU_tb/cpu
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(13): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'dataIn'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(5).
+# 
+#         Region: /CPU_tb/cpu
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(13): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'MemWrite'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(5).
+# 
+#         Region: /CPU_tb/cpu
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(13): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'dataOut'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(5).
+# 
+#         Region: /CPU_tb/cpu
+# ** Warning: (vsim-3722) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(13): [TFMPC] - Missing connection for port 'clk'.
+# 
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(42): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(4).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+run
+# instruction          x
+restart
+# ** Warning: (vsim-3017) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(13): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /CPU_tb/cpu
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(13): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'reset'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(5).
+# 
+#         Region: /CPU_tb/cpu
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(13): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'dataIn'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(5).
+# 
+#         Region: /CPU_tb/cpu
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(13): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'MemWrite'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(5).
+# 
+#         Region: /CPU_tb/cpu
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(13): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'dataOut'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(5).
+# 
+#         Region: /CPU_tb/cpu
+# ** Warning: (vsim-3722) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(13): [TFMPC] - Missing connection for port 'clk'.
+# 
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(42): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(4).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+run
+# instruction          x
+restart
+# ** Warning: (vsim-3017) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(13): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /CPU_tb/cpu
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(13): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'reset'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(5).
+# 
+#         Region: /CPU_tb/cpu
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(13): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'dataIn'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(5).
+# 
+#         Region: /CPU_tb/cpu
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(13): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'MemWrite'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(5).
+# 
+#         Region: /CPU_tb/cpu
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(13): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'dataOut'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(5).
+# 
+#         Region: /CPU_tb/cpu
+# ** Warning: (vsim-3722) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v(13): [TFMPC] - Missing connection for port 'clk'.
+# 
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(42): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(4).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+run
+# instruction          x
+restart
+# Compile of CPU.v was successful with warnings.
+# Compile of CPU_tb.v was successful.
+# 2 compiles, 0 failed with no errors. 
+restart
+# Loading work.CPU_tb
+# Loading work.CPU
+# ** Warning: (vsim-3015) C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(42): [PCDPC] - Port size (32 or 32) does not match connection size (26) for port 'in'. The port definition is at: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v(4).
+# 
+#         Region: /CPU_tb/cpu/shiftLeftJump
+run
+# Break in Module reg_file at C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/reg_file.v line 18
+run
+# instruction  537395200

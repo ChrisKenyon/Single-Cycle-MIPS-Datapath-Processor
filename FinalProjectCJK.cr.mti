@@ -1,0 +1,136 @@
+{C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/reg_32.v} {1 {vlog -work work {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/reg_32.v}
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+-- Compiling module reg_32
+
+Top level modules:
+	reg_32
+
+} {} {}} {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/mux5b2_1.v} {1 {vlog -work work {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/mux5b2_1.v}
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+-- Compiling module mux5b2_1
+
+Top level modules:
+	mux5b2_1
+
+} {} {}} {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/mux32b2_1.v} {1 {vlog -work work {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/mux32b2_1.v}
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+-- Compiling module mux32b2_1
+
+Top level modules:
+	mux32b2_1
+
+} {} {}} {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/aluCtrl.v} {1 {vlog -work work {C:\Users\cjken\Dropbox\Documents\School\Computer Architecture\Project\aluCtrl.v}
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+-- Compiling module alu_control
+
+Top level modules:
+	alu_control
+
+} {} {}} {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v} {1 {vlog -work work {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2_32b.v}
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+-- Compiling module leftshift2_32b
+
+Top level modules:
+	leftshift2_32b
+
+} {} {}} {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/memory.v} {1 {vlog -work work {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/memory.v}
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+-- Compiling module Memory
+
+Top level modules:
+	Memory
+
+} {} {}} {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/mux2_1_tb.v} {1 {vlog -work work {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/mux2_1_tb.v}
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+-- Compiling module test_mux2_1
+
+Top level modules:
+	test_mux2_1
+
+} {} {}} {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/alu.v} {1 {vlog -work work {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/alu.v}
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/tb_ctrlUnit.v} {1 {vlog -work work {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/tb_ctrlUnit.v}
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+-- Compiling module tb_ctrlUnit
+
+Top level modules:
+	tb_ctrlUnit
+
+} {} {}} {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/reg_file_tb.v} {1 {vlog -work work {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/reg_file_tb.v}
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+-- Compiling module test_reg_file
+
+Top level modules:
+	test_reg_file
+
+} {} {}} {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2.v} {1 {vlog -work work {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/leftshift2.v}
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+-- Compiling module leftshift2
+
+Top level modules:
+	leftshift2
+
+} {} {}} {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/tb_aluCtrl.v} {1 {vlog -work work {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/tb_aluCtrl.v}
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+-- Compiling module tb_aluCtrl
+
+Top level modules:
+	tb_aluCtrl
+
+} {} {}} {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/mux2_1.v} {1 {vlog -work work {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/mux2_1.v}
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+-- Compiling module mux2_1
+
+Top level modules:
+	mux2_1
+
+} {} {}} {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v} {1 {vlog -work work {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU_tb.v}
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+-- Compiling module CPU_tb
+
+Top level modules:
+	CPU_tb
+
+} {} {}} {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/ctrlUnit.v} {1 {vlog -work work {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/ctrlUnit.v}
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+-- Compiling module controlunit
+
+Top level modules:
+	controlunit
+
+} {} {}} {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/tb_alu.v} {1 {vlog -work work {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/tb_alu.v}
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+-- Compiling module tb_alu
+
+Top level modules:
+	tb_alu
+
+} {} {}} {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/reg_32_tb.v} {1 {vlog -work work {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/reg_32_tb.v}
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+-- Compiling module reg_32_tb
+
+Top level modules:
+	reg_32_tb
+
+} {} {}} {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v} {2 {vlog -work work {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v}
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+-- Compiling module CPU
+** Warning: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(66): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+
+Top level modules:
+	CPU
+
+} {} {}} {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/signextender.v} {1 {vlog -work work {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/signextender.v}
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+-- Compiling module signextender
+
+Top level modules:
+	signextender
+
+} {} {}}
