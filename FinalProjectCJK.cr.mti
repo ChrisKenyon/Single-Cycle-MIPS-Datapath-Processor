@@ -117,15 +117,6 @@ Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
 Top level modules:
 	reg_32_tb
 
-} {} {}} {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v} {2 {vlog -work work {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v}
-Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
--- Compiling module CPU
-** Warning: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/CPU.v(66): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-
-
-Top level modules:
-	CPU
-
 } {} {}} {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/signextender.v} {1 {vlog -work work {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/Project/signextender.v}
 Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
 -- Compiling module signextender

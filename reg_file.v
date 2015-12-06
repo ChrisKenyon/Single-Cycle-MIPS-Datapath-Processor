@@ -14,6 +14,7 @@ module reg_file(
 
 reg [31:0] regFile [31:0];
 integer i;
+// added reset to hw6 solution file to clear reg file
 always@(reset)begin
   for (i=0; i<32; i=i+1) 
     regFile[i] = 32'b0;
