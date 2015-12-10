@@ -1,4 +1,4 @@
-// Chris Kenyon
+// Chris Kenyon and Brandon Nguyen
 // CPU Test bench
 
 `timescale 1ns / 100ps
@@ -19,6 +19,6 @@ initial begin
 end
 
 always
-  #10 clk =!clk;
+  #10 clk = !clk;
 
 endmodule

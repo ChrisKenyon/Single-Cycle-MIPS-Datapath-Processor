@@ -1,3 +1,4 @@
+// Chris Kenyon and Brandon Nguyen
 // From solutions
 
 module controlunit (input [5:0] opcode,
@@ -18,21 +19,21 @@ begin
     case (opcode)
 		6'b000000 : 
 			begin // ALU r-type, others are 0 by default
-				RegDst <= 1;
-				RegWrite <= 1;
-				ALUop <= 2'b10;
+				RegDst = 1;
+				RegWrite = 1;
+				ALUop = 2'b10;
 			end
 		6'b001000 : 
 			begin // addi instruction
-				ALUSrc <= 1;
-				RegWrite <= 1;
+				ALUSrc = 1;
+				RegWrite = 1;
 			end
 		6'b100011:
 			begin // lw
-				ALUSrc <= 1;
-				MemToReg <= 1;
-				RegWrite <= 1;
-				MemRead <= 1;
+				ALUSrc = 1;
+				MemToReg = 1;
+				RegWrite = 1;
+				MemRead = 1;
 			end
 		6'b101011: 
 			begin // sw

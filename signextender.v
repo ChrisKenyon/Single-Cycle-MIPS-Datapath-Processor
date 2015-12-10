@@ -1,4 +1,4 @@
-// Chris Kenyon
+// Chris Kenyon and Brandon Nguyen
 // Sign Extender
 
 module signextender(in,out);

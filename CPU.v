@@ -1,4 +1,4 @@
-// Chris Kenyon
+// Chris Kenyon and Brandon Nguyen
 // CPU
 
 module CPU(reset, PC, instruction, dataAddress, dataIn, MemRead, MemWrite, dataOut, clk);
@@ -16,7 +16,7 @@ module CPU(reset, PC, instruction, dataAddress, dataIn, MemRead, MemWrite, dataO
 	wire [31:0] nextPC, readData1, readData2, writeData, aluInput, signExtend, extendedAndShifted,
 	      nextInstAddr, ALUresult, branchAddress, PCplusFour;
 	wire [27:0] jumpComponent;
-	reg [5:0] opcode, funct;
+	wire [5:0] opcode, funct;
 	reg [31:0] jumpAddress;
 	
 	// muxes
@@ -39,13 +39,15 @@ module CPU(reset, PC, instruction, dataAddress, dataIn, MemRead, MemWrite, dataO
 	// bit operations
 	signextender signExtender(instruction[15:0], signExtend);
 	leftshift2_32b shiftLeftSignExtend(signExtend, extendedAndShifted);
-  leftshift2_32b shiftLeftJump(instruction[25:0], jumpComponent); // This is a size mismatch that will have the first 4 bits unknown. Inconsequential.
+ 	leftshift2_32b shiftLeftJump(instruction[25:0], jumpComponent); // This is a size mismatch that will have the first 4 bits unknown. Inconsequential.
   
   // assignments
 	assign dataIn = readData2;
 	assign branchAddress = extendedAndShifted + PCplusFour;
-	assign PCplusFour = PC + 4;
-	
+	assign PCplusFour = PC + 4; 
+	assign opcode = instruction[31:26]; 
+	assign funct = instruction[5:0];
+
 	always@(reset)
 	begin
 	  // when reset, set the initial data address back to 0 and the PC back to 0x3000
@@ -64,11 +66,6 @@ module CPU(reset, PC, instruction, dataAddress, dataIn, MemRead, MemWrite, dataO
 	  jumpAddress = {PCplusFour[31:28], jumpComponent};
 	  
 	always@(instruction) begin
-	  
-	  // opcode and funct can be grabbed from the instruction on every change
-	  opcode <= instruction[31:26]; 
-	  funct <= instruction[5:0];
-
 	  // The simulation should stop when the halt instruction is loaded
 	  if(instruction == 8'hFC00000)
 	    $stop;

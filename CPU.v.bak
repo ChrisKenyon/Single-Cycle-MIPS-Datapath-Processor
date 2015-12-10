@@ -1,4 +1,4 @@
-// Chris Kenyon
+// Chris Kenyon and Brandon Nguyen
 // CPU
 
 module CPU(reset, PC, instruction, dataAddress, dataIn, MemRead, MemWrite, dataOut, clk);
@@ -39,7 +39,7 @@ module CPU(reset, PC, instruction, dataAddress, dataIn, MemRead, MemWrite, dataO
 	// bit operations
 	signextender signExtender(instruction[15:0], signExtend);
 	leftshift2_32b shiftLeftSignExtend(signExtend, extendedAndShifted);
-  leftshift2_32b shiftLeftJump(instruction[25:0], jumpComponent);
+  leftshift2_32b shiftLeftJump(instruction[25:0], jumpComponent); // This is a size mismatch that will have the first 4 bits unknown. Inconsequential.
   
   // assignments
 	assign dataIn = readData2;

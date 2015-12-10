@@ -13,8 +13,6 @@ CPU cpu(reset, instructionAddress, instruction, dataAddress, dataIn, MemRead, Me
 
 initial begin
   clk = 0;
-  reset= 0;
-  #5
   reset = 1;
   #5
   reset = 0;

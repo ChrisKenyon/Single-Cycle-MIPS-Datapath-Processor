@@ -1,4 +1,4 @@
-// Chris Kenyon
+// Chris Kenyon and Brandon Nguyen
 // input should be the sign extended output
 
 module leftshift2_32b(in, out);

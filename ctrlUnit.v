@@ -1,3 +1,4 @@
+// Chris Kenyon and Brandon Nguyen
 // From solutions
 
 module controlunit (input [5:0] opcode,

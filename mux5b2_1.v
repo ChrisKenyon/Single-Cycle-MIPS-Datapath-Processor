@@ -1,4 +1,4 @@
-// Chris Kenyon
+// Chris Kenyon and Brandon Nguyen
 // 5 bit 2 to 1 mux
 
 module mux5b2_1 (a, b, select, out);

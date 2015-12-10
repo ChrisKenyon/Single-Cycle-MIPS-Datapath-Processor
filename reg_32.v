@@ -1,3 +1,4 @@
+// Chris Kenyon and Brandon Nguyen
 // From solutions
 
 module reg_32(	input [31:0] in,

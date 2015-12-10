@@ -1,4 +1,5 @@
-// Chris Kenyon and Brandon Nguyen
+// FIX output reg
+// Chris Kenyon
 // input should be instruction
 
 module leftshift2(clk, in, out);

@@ -1,3 +1,4 @@
+// Chris Kenyon and Brandon Nguyen
 // From solutions
 
 module alu_control(	input[1:0] aluop, 

@@ -8,6 +8,6 @@ module signextender(in,out);
   always@(in) begin
     // 16 of in[15] to extend the sign
     // plus the rest of in set to out
-    out <= { 16{in[15]}, in[15:0]};
+    out <= { {16{in[15]}}, in[15:0]};
   end
 endmodule
